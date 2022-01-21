@@ -1,0 +1,22 @@
+hr {
+    height: 0px; 
+    border-style: dotted none none; 
+    width: 10%; 
+    border-width: 10px;
+    border-color: #FC5185;
+}
+h1 {
+    color: #3FC1C9;
+}
+h3 {
+    color: #3FC1C9;
+}
+body {
+    background-color: #F5F5F5;
+    color: #364F6B;
+    
+}
+table {
+    border-color: #3FC1C9;
+    
+}
