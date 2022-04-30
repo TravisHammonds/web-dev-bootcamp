@@ -1,3 +1,40 @@
+
 body {
-    background-color: blue;
+    margin: 0px;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+
+
+}
+
+
+h1 {
+    margin: 0 auto;
+    width: 10%;
+    font-family: 'Sacramento', cursive;
+    
+}
+
+p{
+    font-family: 'Quicksand', sans-serif;
+}
+
+.top-container {
+    background-color: #f09576;
+    position: relative;
+    padding-top: 100px;
+}
+
+.top-cloud {
+    position: absolute;
+    top: 50px;
+    right: 500px;
+
+
+}
+
+.bottom-cloud {
+    position: absolute;
+    left: 475px;
+    bottom: 315px;
 }
