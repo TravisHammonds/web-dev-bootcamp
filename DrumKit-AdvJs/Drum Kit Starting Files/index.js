@@ -8,8 +8,10 @@ for (var i = 0; i < numberOfButtons; i++) { //counts through buttons in .drum...
     document.querySelectorAll(".drum")[i].addEventListener("click", function () {
 
         var buttonInnerHTML = this.innerHTML; //creates a variable for the innerHTML of the button clicked
+        
         makeSound(buttonInnerHTML) //calls makeSound parsing in the innerHTML of the button
 
+        buttonAnimation(buttonInnerHTML) //calls buttonAnimation parsing in the innerHTML of the button
     });
 }
 
@@ -18,6 +20,8 @@ for (var i = 0; i < numberOfButtons; i++) { //counts through buttons in .drum...
 document.addEventListener("keydown", function (event) { //event is the object KeyboardEvent
 //adds listener to every key, the event occurring is parsed into the function as event
     makeSound(event.key) //passes in the value of the key parameter for KeyboardEvent
+
+    buttonAnimation(event.key) //calls buttonAnimation parsing in the KeyboardEvent
 }); 
 
 
@@ -56,4 +60,15 @@ function makeSound(key) { //passes in a value to be parsed that indicates which 
         default:
             console.log(key);
     }
+}
+
+function buttonAnimation(currentKey) {
+    
+    var activeButton = document.querySelector("." + currentKey);
+
+    activeButton.classList.add("pressed");
+
+    setTimeout(function() {
+        activeButton.classList.remove("pressed");
+    }, 100);  
 }
