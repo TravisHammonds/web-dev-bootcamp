@@ -1,0 +1,12 @@
+
+.flag{
+    background-color: red;
+    height: 600px;
+    width: 900px;
+    text-align: center;
+}
+
+.flag p {
+    color: white;
+
+}
